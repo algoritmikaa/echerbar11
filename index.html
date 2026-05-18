@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dental Fantasi — Стоматология</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <!-- Основной файл стилей -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+
+  <!-- ========== ШАПКА ========== -->
+  <header class="header glass">
+    <div class="container header__inner">
+      <a href="#" class="logo">Dental Fantasi</a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="#about" class="nav__link">О клинике</a></li>
+          <li><a href="#services" class="nav__link">Услуги</a></li>
+          <li><a href="#gallery" class="nav__link">Галерея</a></li>
+          <li><a href="#contacts" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+      <!-- Кнопка переключения темы -->
+      <button id="theme-toggle" class="theme-toggle" aria-label="Переключить тему">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== ГЛАВНЫЙ ЭКРАН ========== -->
+  <section class="hero">
+    <!-- Декоративные плавающие элементы -->
+    <div class="hero__bg-shapes">
+      <div class="shape shape--1"></div>
+      <div class="shape shape--2"></div>
+      <div class="shape shape--3"></div>
+      <div class="shape shape--4"></div>
+    </div>
+    <div class="container hero__content" data-aos="fade-up">
+      <h1 class="hero__title">Dental Fantasi</h1>
+      <p class="hero__subtitle">Ваша улыбка — наша забота</p>
+      <div class="hero__buttons">
+        <a href="#contacts" class="btn btn-primary">Записаться на приём</a>
+        <a href="#services" class="btn btn-outline">Наши услуги</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== О КЛИНИКЕ ========== -->
+  <section id="about" class="section about">
+    <div class="container" data-aos="fade-right">
+      <h2 class="section__title">О клинике</h2>
+      <div class="about__content glass">
+        <p>Клиника Dental Fantasi — это сочетание передовых технологий и искусства стоматологии. Мы объединили опыт ведущих специалистов, инновационное оборудование и атмосферу абсолютного комфорта.</p>
+        <p>Наша миссия — подарить вам здоровую и сияющую улыбку, о которой вы всегда мечтали.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== УСЛУГИ ========== -->
+  <section id="services" class="section services">
+    <div class="container">
+      <h2 class="section__title" data-aos="fade-up">Наши услуги</h2>
+      <div class="services__grid">
+        <div class="service-card glass" data-aos="zoom-in" data-aos-delay="100">
+          <i class="fas fa-tooth service-card__icon"></i>
+          <h3 class="service-card__title">Отбеливание</h3>
+          <p class="service-card__text">Профессиональное осветление эмали до 10 тонов.</p>
+        </div>
+        <div class="service-card glass" data-aos="zoom-in" data-aos-delay="200">
+          <i class="fas fa-stethoscope service-card__icon"></i>
+          <h3 class="service-card__title">Лечение кариеса</h3>
+          <p class="service-card__text">Безболезненное лечение с использованием лазера.</p>
+        </div>
+        <div class="service-card glass" data-aos="zoom-in" data-aos-delay="300">
+          <i class="fas fa-microchip service-card__icon"></i>
+          <h3 class="service-card__title">Имплантация</h3>
+          <p class="service-card__text">Восстановление зубов по швейцарским протоколам.</p>
+        </div>
+        <div class="service-card glass" data-aos="zoom-in" data-aos-delay="100">
+          <i class="fas fa-teeth service-card__icon"></i>
+          <h3 class="service-card__title">Протезирование</h3>
+          <p class="service-card__text">Керамические виниры, коронки, мосты.</p>
+        </div>
+        <div class="service-card glass" data-aos="zoom-in" data-aos-delay="200">
+          <i class="fas fa-smile service-card__icon"></i>
+          <h3 class="service-card__title">Ортодонтия</h3>
+          <p class="service-card__text">Исправление прикуса брекетами и элайнерами.</p>
+        </div>
+        <div class="service-card glass" data-aos="zoom-in" data-aos-delay="300">
+          <i class="fas fa-broom service-card__icon"></i>
+          <h3 class="service-card__title">Чистка зубов</h3>
+          <p class="service-card__text">Ультразвуковая и AirFlow гигиена.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ГАЛЕРЕЯ ========== -->
+  <section id="gallery" class="section gallery">
+    <div class="container">
+      <h2 class="section__title" data-aos="fade-up">Галерея</h2>
+      <div class="gallery__grid" data-aos="fade-up" data-aos-delay="100">
+        <div class="gallery__item glass">
+          <img src="https://images.stroistyle.com/posts/2010588-interer-stomatologicheskogo-kabineta-1.jpg" alt="Современный стоматологический кабинет">
+        </div>
+        <div class="gallery__item glass">
+          <img src="https://img.dental-first.ru/upload/webp/resize_cache/a8e/774_568_10205b06ad4e1b15865d4d867af3991d8/kd31wl85mdkwct6554sfmu7zh52rgi9k.webp" alt="Инструменты стоматолога">
+        </div>
+        <div class="gallery__item glass">
+          <img src="https://atlantis-dental.ru/imagearticle/gol1.jpg" alt="Счастливая улыбка пациента">
+        </div>
+        <div class="gallery__item glass">
+          <img src="https://www.gd.ru/images/bezopasnost-v-stomatologii.jpg" alt="Детальная работа стоматолога">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== КОНТАКТЫ ========== -->
+  <section id="contacts" class="section contacts">
+    <div class="container">
+      <h2 class="section__title" data-aos="fade-up">Контакты</h2>
+      <div class="contacts__cards">
+        <div class="contact-card glass" data-aos="fade-right">
+          <i class="fas fa-phone-alt contact-card__icon"></i>
+          <div class="contact-card__info">
+            <h3>Телефон</h3>
+            <a href="tel:+791212312" class="contact-card__link">+7 912 123 12</a>
+          </div>
+        </div>
+        <div class="contact-card glass" data-aos="fade-left">
+          <i class="fas fa-map-marker-alt contact-card__icon"></i>
+          <div class="contact-card__info">
+            <h3>Адрес</h3>
+            <p>г. Москва, ул. Макороная</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ФУТЕР ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2025 Dental Fantasi. Все права защищены.</p>
+      <div class="social">
+        <a href="#" class="social__link"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social__link"><i class="fab fa-vk"></i></a>
+        <a href="#" class="social__link"><i class="fab fa-telegram-plane"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Кнопка "Наверх" -->
+  <button id="back-to-top" class="back-to-top" aria-label="Наверх">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Пользовательские скрипты -->
+  <script>
+    // Инициализация AOS
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out',
+      once: true
+    });
+
+    // Переключение темы (светлая/тёмная)
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    const icon = themeToggle.querySelector('i');
+
+    function setTheme(theme) {
+      body.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+      // Обновляем иконку
+      if (theme === 'dark') {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+      } else {
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+      }
+    }
+
+    // Применяем сохранённую тему или светлую по умолчанию
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    setTheme(savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = body.getAttribute('data-theme');
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      setTheme(newTheme);
+    });
+
+    // Кнопка «Наверх»
+    const backToTopBtn = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Плавный скролл для всех якорных ссылок
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const target = document.querySelector(targetId);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
